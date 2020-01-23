@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Webapp Deepthi PyStudentManager</title>
+</head>
+<body>
+    <div class="page header">
+        <h1> PyStudent Manager </h1>
+    </div>
+           <h2> PyStudent Manager </h2>
+    </div>
+
+<div class=""row">
+    <div class=""col-md-12">
+    <table class=""table table-striped">
+        <head>
+            <tr>
+                <th>Student <ID></ID>
+                </th>
+                <th> |First name|</th>
+                <th> Last name| </th>
+                <th> Actions| </th>
+            </tr>
+        </head>
+    <head>
+        <form>
+ First name:<br>
+  <input type="text" name="firstname"><br>
+ Last name:<br>
+  <input type="text" name="lastname">
+</form>
+    </head>
+    <body>
+    <blockquote> {% for student in students %}
+        <table>
+    <tr>
+        <td> {{student.student_id }}</td>
+        <td> {{student.name }}</td>\
+        <td> {{student.last_name}}</td>
+        <td>
+            <button> Edit </button>
+            <button> Delete </button>
+        </td>
+    </tr>
+    {% endfor %}
+        </table>
+        </blockquote>
+    </body>
+
+    </div>
+</body>
+</html>
